@@ -39,3 +39,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/scuttle-bot-win32-x64
