@@ -1,13 +1,10 @@
 {
-  "name": "ngx-admin",
-  "version": "3.2.1",
-  "license": "MIT",
+  "name": "scuttle-bot",
+  "version": "0.0.0",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "git+https://github.com/smith0811/scuttlebot.git"
   },
   "browserslist": [
     "> 1%",
