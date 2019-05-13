@@ -1,0 +1,107 @@
+<div class="row">
+    <div class="col-md-12">
+      <nb-card>
+        <nb-card-header>Billings</nb-card-header>
+        <nb-card-body>
+            <div class="row mb-3">
+                <form class="row col-sm-12">
+                  <div class="col-sm-6">
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Profile</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Profile">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Profile Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Profile Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Phone Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Credit Card Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Credit Card Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Credit Card Nubmer</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Credit Card Nubmer">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">Expiraton Date</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Expiraton Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputKeyword" class="col-sm-3 col-form-label">CVV Nubmer</label>
+                        <div class="col-sm-9">
+                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="CVV Nubmer">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="form-group row">
+                          <label for="inputKeyword" class="col-sm-3 col-form-label">Address 1</label>
+                          <div class="col-sm-9">
+                              <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Address 1">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputKeyword" class="col-sm-3 col-form-label">Address 2</label>
+                          <div class="col-sm-9">
+                              <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Address 2">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputKeyword" class="col-sm-3 col-form-label">City</label>
+                          <div class="col-sm-9">
+                              <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="City">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputKeyword" class="col-sm-3 col-form-label">State</label>
+                          <div class="col-sm-9">
+                              <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="State">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputKeyword" class="col-sm-3 col-form-label">Zip Code</label>
+                          <div class="col-sm-9">
+                              <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Zip Code">
+                          </div>
+                      </div>
+                  </div>
+                </form>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+                </ng2-smart-table>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" nbButton class="btn btn-primary">CANCEL</button>
+                    <button type="submit" nbButton class="btn btn-primary">SAVE</button>
+                </div>
+            </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+</div>

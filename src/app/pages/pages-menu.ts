@@ -19,11 +19,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Billing',
     icon: 'nb-coffee-maker',
-    link: '/pages/billing',
+    link: '/pages/billings',
   },
   {
     title: 'Settings',
     icon: 'nb-gear',
-    link: '/pages/setting',
+    link: '/pages/settings',
   },
 ];
