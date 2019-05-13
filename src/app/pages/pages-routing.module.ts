@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 import { CreateComponent } from './create/create.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { ProxiesComponent } from './proxies/proxies.component';
 
 const routes: Routes = [{
   path: '',
@@ -16,6 +17,10 @@ const routes: Routes = [{
     {
       path: 'tasks',
       component: TasksComponent,
+    },
+    {
+      path: 'proxies',
+      component: ProxiesComponent,
     },
     {
       path: '',

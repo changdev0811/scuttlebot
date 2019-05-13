@@ -14,7 +14,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Proxies',
     icon: 'nb-loop',
-    link: '/pages/proxy',
+    link: '/pages/proxies',
   },
   {
     title: 'Billing',

@@ -11,8 +11,12 @@ import {
 } from './utils';
 import { UserData } from './data/users';
 import { UserService } from './mock/users.service';
+
 import { TasksTableData } from './data/tasks-table';
 import { TasksTableService } from './mock/tasks-table.service';
+
+import { ProxiesTableData } from './data/proxies-table';
+import { ProxiesTableService } from './mock/proxies-table.service';
 
 import { MockDataModule } from './mock/mock-data.module';
 
@@ -37,6 +41,7 @@ const socialLinks = [
 const DATA_SERVICES = [
   { provide: UserData, useClass: UserService },
   { provide: TasksTableData, useClass: TasksTableService },
+  { provide: ProxiesTableData, useClass: ProxiesTableService },
 ];
 
 export class NbSimpleRoleProvider extends NbRoleProvider {
