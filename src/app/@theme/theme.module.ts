@@ -38,15 +38,12 @@ import {
 import { NbSecurityModule } from '@nebular/security';
 
 import {
-  FooterComponent,
   HeaderComponent,
-  SearchInputComponent,
   ThemeSettingsComponent,
   SwitcherComponent,
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
-  ToggleSettingsButtonComponent,
 } from './components';
 import {
   CapitalizePipe,
@@ -107,14 +104,11 @@ const COMPONENTS = [
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
   HeaderComponent,
-  FooterComponent,
-  SearchInputComponent,
   ThemeSettingsComponent,
   OneColumnLayoutComponent,
   SampleLayoutComponent,
   ThreeColumnsLayoutComponent,
   TwoColumnsLayoutComponent,
-  ToggleSettingsButtonComponent,
 ];
 
 const ENTRY_COMPONENTS = [
