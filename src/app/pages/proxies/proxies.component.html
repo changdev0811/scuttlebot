@@ -4,15 +4,21 @@
         <nb-card-header>Proxies</nb-card-header>
         <nb-card-body>
             <div class="row mb-3">
-                <div class="col-sm-12">
-                <textarea rows="5" placeholder="Text Area" class="form-control"></textarea>
+                <div class="col-sm-10">
+                  <textarea rows="5" placeholder="Text Area" class="form-control"></textarea>
+                </div>
+                <div class="col-sm-2">
+                  <button type="submit" nbButton class="btn btn-primary">CREATE</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-              <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
-              </ng2-smart-table>
+              <div class="col-sm-10">
+                <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+                </ng2-smart-table>
               </div>
+              <div class="col-sm-2">
+                  <button type="submit" nbButton class="btn btn-primary">ADD</button>
+                </div>
             </div>
         </nb-card-body>
       </nb-card>
