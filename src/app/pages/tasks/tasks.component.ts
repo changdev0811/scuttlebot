@@ -14,10 +14,12 @@ import { TasksTableData } from '../../@core/data/tasks-table';
 })
 export class TasksComponent {
   settings = {
-    add: {
-      addButtonContent: '<i class="nb-plus"></i>',
-      createButtonContent: '<i class="nb-checkmark"></i>',
-      cancelButtonContent: '<i class="nb-close"></i>',
+    pager : {
+      display : false,
+    },
+    // add: false
+    actions: {
+      add: false,
     },
     edit: {
       editButtonContent: '<i class="nb-edit"></i>',
@@ -33,25 +35,17 @@ export class TasksComponent {
         title: 'ID',
         type: 'number',
       },
-      firstName: {
-        title: 'First Name',
+      keywords: {
+        title: 'KEYWORDS',
         type: 'string',
       },
-      lastName: {
-        title: 'Last Name',
+      size: {
+        title: 'SIZE',
         type: 'string',
       },
-      username: {
-        title: 'Username',
+      profile: {
+        title: 'PROFILE',
         type: 'string',
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string',
-      },
-      age: {
-        title: 'Age',
-        type: 'number',
       },
     },
   };
