@@ -5,7 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './setting.component.html',
 })
 export class SettingComponent {
+  checkoutdelay = '1';
+  retrydelay = '2';
   notification = 'on';
+  checkout = 'on';
   discord_hook_url = 'https://www.demo';
   username = 'joxroxagain';
   password= '123456';

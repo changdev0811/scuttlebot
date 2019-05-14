@@ -6,15 +6,45 @@
           <div class="row">
             <form class="row col-sm-12">
               <div class="col-sm-6">
-                
+                  <nb-card>
+                    <nb-card-body>
+                      <div class="form-group row">
+                          <label for="inputRetrydelay" class="col-sm-6 col-form-label">Retry delay in seconds</label>
+                          <div class="col-sm-6">
+                              <input [(value)]="retrydelay" type="number" nbInput fullWidth name="retrydelay" id="inputRetrydelay" min="1" max="100">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputCheckoutdelay" class="col-sm-6 col-form-label">Checkout delay in seconds</label>
+                          <div class="col-sm-6">
+                              <input [(value)]="checkoutdelay" type="number" nbInput fullWidth name="checkoutdelay" id="inputCheckoutdelay" min="1" max="100">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="checkout" class="col-sm-6 col-form-label">Checkout OOS products</label>
+                          <div class="col-sm-6">
+                              <nb-radio-group [(value)]="checkout" name="checkout">
+                                  <nb-radio
+                                    [value]="'on'" class="d-inline">
+                                    ON
+                                  </nb-radio>
+                                  <nb-radio
+                                    [value]="'off'" class="d-inline">
+                                    OFF
+                                  </nb-radio>
+                                </nb-radio-group>
+                          </div>
+                      </div>
+                  </nb-card-body>
+                </nb-card>
               </div>
               <div class="col-sm-6">
                   <nb-card>
                       <nb-card-body>
                         <div class="form-group row">
-                            <label for="notification" class="col-sm-3 col-form-label">Notification</label>
-                            <div class="col-sm-9">
-                              <nb-radio-group [(value)]="notification" >
+                            <label for="notification" class="col-sm-4 col-form-label">Notification</label>
+                            <div class="col-sm-8">
+                              <nb-radio-group [(value)]="notification" name="notification">
                                 <nb-radio
                                   [value]="'on'" class="d-inline">
                                   ON
@@ -27,8 +57,8 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="url" class="col-sm-3 col-form-label">Discord HOOK URL</label>
-                            <div class="col-sm-9">
+                            <label for="url" class="col-sm-4 col-form-label">Discord HOOK URL</label>
+                            <div class="col-sm-8">
                                 <input [(value)]="discord_hook_url" type="text" nbInput fullWidth  class="form-control" id="url" placeholder="Discord HOOK URL">
                             </div>
                         </div>
@@ -37,20 +67,20 @@
                   <nb-card>
                     <nb-card-body>
                       <div class="form-group row">
-                          <label for="inputusername" class="col-sm-3 col-form-label">User Name</label>
-                          <div class="col-sm-9">
+                          <label for="inputusername" class="col-sm-4 col-form-label">User Name</label>
+                          <div class="col-sm-8">
                               <input [(value)]="username" type="text" nbInput fullWidth  class="form-control" id="inputusername" placeholder="User Name">
                           </div>
                       </div>
                       <div class="form-group row">
-                          <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-                          <div class="col-sm-9">
+                          <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                          <div class="col-sm-8">
                               <input [(value)]="password" (click)="onClickPassword()" type={{password_type}} nbInput fullWidth  class="form-control" id="inputPassword" placeholder="Password">
                           </div>
                       </div>
                       <div class="form-group row">
-                          <label for="inputLicencse" class="col-sm-3 col-form-label">Licencse Key</label>
-                          <div class="col-sm-9">
+                          <label for="inputLicencse" class="col-sm-4 col-form-label">Licencse Key</label>
+                          <div class="col-sm-8">
                               <input [(value)]="license_key" (click)="onClickLicense()" type={{license_type}} nbInput fullWidth  class="form-control" id="inputLicencse" placeholder="Licencse Key">
                           </div>
                       </div>
@@ -59,14 +89,14 @@
                   <nb-card>
                     <nb-card-body>
                       <div class="form-group row">
-                        <label for="inputVersion" class="col-sm-3 col-form-label">Version Counter</label>
-                        <div class="col-sm-9">
+                        <label for="inputVersion" class="col-sm-4 col-form-label">Version Counter</label>
+                        <div class="col-sm-8">
                             <input [(value)]="version_number" type="text" nbInput fullWidth  class="form-control" id="inputVersion" placeholder="Version Counter">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-sm-9">
-                        <button type="button" nbButton status="primary" class="btn float-right">Check for update/install</button>  
+                        <div class="offset-sm-4 col-sm-8">
+                        <button type="button" nbButton status="primary" class="btn">Check for update/install</button>  
                         </div>
                       </div>
                     </nb-card-body>
