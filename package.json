@@ -2,6 +2,7 @@
   "name": "scuttle-bot",
   "version": "0.0.0",
   "private": true,
+  "author": "Yilong",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smith0811/scuttlebot.git"
