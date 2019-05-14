@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-md-12">
+      <nb-card>
+        <nb-card-header>Settings</nb-card-header>
+        <nb-card-body>
+          <div class="row">
+            <form class="row col-sm-12">
+              <div class="col-sm-6">
+                
+              </div>
+              <div class="col-sm-6">
+                  <nb-card>
+                      <nb-card-body>
+                        <div class="form-group row">
+                            <label for="notification" class="col-sm-3 col-form-label">Notification</label>
+                            <div class="col-sm-9">
+                              <nb-radio-group [(value)]="notification" >
+                                <nb-radio
+                                  [value]="'on'" class="d-inline">
+                                  ON
+                                </nb-radio>
+                                <nb-radio
+                                  [value]="'off'" class="d-inline">
+                                  OFF
+                                </nb-radio>
+                              </nb-radio-group>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="url" class="col-sm-3 col-form-label">Discord HOOK URL</label>
+                            <div class="col-sm-9">
+                                <input [(value)]="discord_hook_url" type="text" nbInput fullWidth  class="form-control" id="url" placeholder="Discord HOOK URL">
+                            </div>
+                        </div>
+                      </nb-card-body>
+                  </nb-card>
+                  <nb-card>
+                    <nb-card-body>
+                      <div class="form-group row">
+                          <label for="inputusername" class="col-sm-3 col-form-label">User Name</label>
+                          <div class="col-sm-9">
+                              <input [(value)]="username" type="text" nbInput fullWidth  class="form-control" id="inputusername" placeholder="User Name">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                          <div class="col-sm-9">
+                              <input [(value)]="password" (click)="onClickPassword()" type={{password_type}} nbInput fullWidth  class="form-control" id="inputPassword" placeholder="Password">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputLicencse" class="col-sm-3 col-form-label">Licencse Key</label>
+                          <div class="col-sm-9">
+                              <input [(value)]="license_key" (click)="onClickLicense()" type={{license_type}} nbInput fullWidth  class="form-control" id="inputLicencse" placeholder="Licencse Key">
+                          </div>
+                      </div>
+                    </nb-card-body>
+                  </nb-card>
+                  <nb-card>
+                    <nb-card-body>
+                      <div class="form-group row">
+                        <label for="inputVersion" class="col-sm-3 col-form-label">Version Counter</label>
+                        <div class="col-sm-9">
+                            <input [(value)]="version_number" type="text" nbInput fullWidth  class="form-control" id="inputVersion" placeholder="Version Counter">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-sm-9">
+                        <button type="button" nbButton status="primary" class="btn float-right">Check for update/install</button>  
+                        </div>
+                      </div>
+                    </nb-card-body>
+                  </nb-card>
+              </div>
+            </form>
+          </div>
+          <div class="row mt-3">
+            <div class="offset-sm-3 col-sm-9">
+                <button type="submit" nbButton status="primary" class="btn float-right">SAVE</button>  
+                <button type="submit" nbButton status="danger" class="btn float-right mr-3">CANCEL</button>
+            </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+</div>

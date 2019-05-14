@@ -24,6 +24,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Settings',
     icon: 'nb-gear',
-    link: '/pages/settings',
+    link: '/pages/setting',
   },
 ];

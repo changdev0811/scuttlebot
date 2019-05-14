@@ -6,7 +6,7 @@ import { CreateComponent } from './create/create.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { ProxiesComponent } from './proxies/proxies.component';
 import { BillingsComponent } from './billings/billings.component';
-
+import { SettingComponent } from './setting/setting.component';
 const routes: Routes = [{
   path: '',
   component: PagesComponent,
@@ -26,6 +26,10 @@ const routes: Routes = [{
     {
       path: 'billings',
       component: BillingsComponent,
+    },
+    {
+      path: 'setting',
+      component: SettingComponent,
     },
     {
       path: '',
