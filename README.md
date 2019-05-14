@@ -1,5 +1,9 @@
 
 Scuttle Bot Frontend(Angular 7+/Electron) with ngx-admin/nebular theme
+npm install
+cd scuttlebot
+npm start (or ng serve)
+npm run electron
 
 ```
 I am Yilong in freelancer.com
