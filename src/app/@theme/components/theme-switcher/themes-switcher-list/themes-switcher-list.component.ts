@@ -31,11 +31,7 @@ export class ThemeSwitcherListComponent {
     {
       title: 'Cosmic',
       key: 'cosmic',
-    },
-    {
-      title: 'Corporate',
-      key: 'corporate',
-    },
+    }
   ];
 
   constructor(
