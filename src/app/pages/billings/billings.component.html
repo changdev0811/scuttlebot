@@ -21,7 +21,7 @@
                     <div class="form-group row">
                         <label for="inputKeyword" class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-9">
-                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Email">
+                            <input type="email" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -45,7 +45,10 @@
                     <div class="form-group row">
                         <label for="inputKeyword" class="col-sm-3 col-form-label">Expiraton Date</label>
                         <div class="col-sm-9">
-                            <input type="text" nbInput fullWidth  class="form-control" id="inputKeyword" placeholder="Expiraton Date">
+                            <input nbInput
+                                placeholder="Expiraton Date"
+                                [nbDatepicker]="datepicker">
+                            <nb-datepicker #datepicker></nb-datepicker>
                         </div>
                     </div>
                     <div class="form-group row">

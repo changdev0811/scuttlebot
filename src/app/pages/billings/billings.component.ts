@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LocalDataSource } from 'ng2-smart-table';
 
 import { BillingsTableData } from '../../@core/data/billings-table';
+import { NbDateService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-billings',
