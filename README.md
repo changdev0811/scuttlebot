@@ -1,5 +1,5 @@
-
-Scuttle Bot Frontend(Angular 7+/Electron) with ngx-admin/nebular theme
+# Scuttle Bot
+This project was generated with ngx-admin/nebular theme(Angular 7+/Electron).
 
 ## Installation
 
