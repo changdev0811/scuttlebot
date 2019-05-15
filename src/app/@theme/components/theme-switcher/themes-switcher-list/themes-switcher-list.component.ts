@@ -29,7 +29,7 @@ export class ThemeSwitcherListComponent {
       key: 'default',
     },
     {
-      title: 'Cosmic',
+      title: 'Dark',
       key: 'cosmic',
     }
   ];
