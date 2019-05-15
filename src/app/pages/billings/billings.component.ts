@@ -64,4 +64,6 @@ export class BillingsComponent {
       event.confirm.reject();
     }
   }
+
+  show: boolean = false;
 }

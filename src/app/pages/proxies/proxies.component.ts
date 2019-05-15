@@ -64,4 +64,7 @@ export class ProxiesComponent {
       event.confirm.reject();
     }
   }
+
+  show: boolean = false;
+
 }
